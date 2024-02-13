@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @media screen and (max-width: 400px){
+            .login{
+                background-color: green;
+            }           
+        }
+        @media screen and (min-width: 600px){
+            .login{
+                background-color: orange;
+            }           
+        }
+        .login{
+            padding-left: 30%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login">
+<form>
+    <label for="FNM">First Name:</label><br><input type="text" name="FNM" id="FNM"><br>
+    
+    <label for="MNM">Middle Name:</label><br><input type="text" name="MNM" id="MNM"><br>
+    
+    <label for="LNM">Last Name:</label><br><input type="text" name="LNM" id="LNM"><br>
+    
+    <label for="email">e-Mail:</label><br><input type="email" name="email" id="email"><br>
+    
+    <label for="Pass">Password:</label><br><input type="password" name="Pass" id="Pass"><br><br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
