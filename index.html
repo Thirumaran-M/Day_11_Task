@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Document</title>
     <style>
-        @media screen and (max-width: 400px){
-            .login{
-                background-color: green;
-            }           
+        table{
+            border: solid 1px black;
+            border-collapse:collapse;
+            text-align: center;
         }
-        @media screen and (min-width: 600px){
-            .login{
-                background-color: orange;
-            }           
+        td{
+            padding: 5px;
         }
-        .login{
-            padding-left: 30%;
-        }
-
     </style>
 </head>
 <body>
-    <div class="login">
-<form>
-    <label for="FNM">First Name:</label><br><input type="text" name="FNM" id="FNM"><br>
-    
-    <label for="MNM">Middle Name:</label><br><input type="text" name="MNM" id="MNM"><br>
-    
-    <label for="LNM">Last Name:</label><br><input type="text" name="LNM" id="LNM"><br>
-    
-    <label for="email">e-Mail:</label><br><input type="email" name="email" id="email"><br>
-    
-    <label for="Pass">Password:</label><br><input type="password" name="Pass" id="Pass"><br><br>
-    <input type="submit" value="Submit">
-</form>
-</div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>State of Health</th>
+                <th colspan="2">Fasting Value</th>
+                <th>After Remaining</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Minimum</th>
+                <th>Normal</th>
+                <th>2 hours of Eating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 140</td>
+            </tr>
+            <tr>
+                <td>Pre-Diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 to 200</td>
+            </tr>
+            <tr>
+                <td>Diabetes</td>
+                <td>more than 126</td>
+                <td>Not Applicable</td>
+                <td>More than 200</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
